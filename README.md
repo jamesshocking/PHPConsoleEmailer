@@ -1,9 +1,6 @@
-# PHP Emailer Client 
+## Database
 
-Downloads email addresses from remote web site and sends an email to them
-
-## Run
-- Clone the repo
-- At the console type "php composer.phar update" and without the quotes
-- Now enter "php main.php"
+- Database: mail2ru
+- User: mail2ru_user
+- Tables: email_addresses (email), send_email_addresses (email)
 
