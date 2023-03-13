@@ -1,6 +1,13 @@
-## Database
+# Mail 2 RU Client
 
-- Database: mail2ru
-- User: mail2ru_user
-- Tables: email_addresses (email), send_email_addresses (email)
+## Update Composer
+php composer.phar update
 
+## CRON
+Edit /etc/crontab
+
+Add, to run daily at 12pm 
+
+0 12 * * * php ~/PHPConsolerEmailer/src/main.php
+
+##
