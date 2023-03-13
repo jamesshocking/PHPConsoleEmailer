@@ -11,7 +11,7 @@ class Mail2RUWebModel
         $response = $httpClient->request('GET', $web_url);
 
         print $web_url;
-
+        
         $addresses = [];
 
         if($response->getStatusCode() == 200) {
@@ -30,7 +30,9 @@ class Mail2RUWebModel
                     $addressArray = explode(',', $addressesRaw);
                     foreach($addressArray as $value) {
                         // clean up the addresses and load into the $address array
-                        array_push($addresses, str_replace("\"", "", $value));
+                        $recipient = new RecipientModel(str_replace("\"", "", $value));
+                        $addresses[$recipient->uniqueId] = $recipient;
+                        //array_push($addresses, $recipient);
                     }
                 }
             }            

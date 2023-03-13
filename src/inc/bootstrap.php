@@ -15,6 +15,7 @@ require_once PROJECT_ROOT_PATH . "/Controller/Api/BaseController.php";
 require_once PROJECT_ROOT_PATH . "/Model/Mail2RUModel.php";
 require_once PROJECT_ROOT_PATH . "/Model/Mail2RUWebModel.php";
 require_once PROJECT_ROOT_PATH . "/Model/ContentModel.php";
-require_once PROJECT_ROOT_PATH . "/Model/EmailModel.php";
+require_once PROJECT_ROOT_PATH . "/Model/EmailHandlerModel.php";
+require_once PROJECT_ROOT_PATH . "/Model/RecipientModel.php";
 
 ?>
